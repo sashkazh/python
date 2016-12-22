@@ -9,7 +9,7 @@ class New_client():
         if not (type(first_name)==str and type(last_name)==str and type(country)==str and type(city)==str and type(address)==str and type(index)==int) :
             print('err_incorrect_data_type')
             return None
-        elif not(100000 <= index <= 1000000):
+        elif not(100000 <= index <= 999999):
             print('err_incorrect_index_length')
             return None
         self.first_name, self.last_name, self.country, self.city, self.address, self.index = (
